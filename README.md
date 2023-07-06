@@ -14,7 +14,7 @@ The purpose of the Energy Consumption Detector is to prevent unnecessary waste a
 3) With a Bluetooth module, the system is integrated with mobile applications. So, the users will be able to monitor/see the energy usage remotely. In the mobile application, additional features such as energy-saving tips can be added.  
 
 ![Aspose Words a38cbf35-d0cb-4315-b13c-3e464c093027 002](https://github.com/ZehraMogulkoc/Energy-Saving-System/assets/87859856/80b28cd0-0316-47d2-8f88-0a6d3794542e)
-](Aspose.Words.a38cbf35-d0cb-4315-b13c-3e464c093027.002.jpeg)
+]
 
 ***Figure1: Design of the project*** 
 
@@ -69,8 +69,7 @@ To make the project more helpful, we created a mobile application and connected 
 - **Smart Algorithm** 
 
 To make the project more smart, we implemented a linear regression. With the help of the algorithm we will be able to make predictions about the future energy consumption. Additionally, this predicted value is sent to the mobile application.  
-
-![](Aspose.Words.a38cbf35-d0cb-4315-b13c-3e464c093027.003.jpeg)
+![Aspose Words a38cbf35-d0cb-4315-b13c-3e464c093027 003](https://github.com/ZehraMogulkoc/Energy-Saving-System/assets/87859856/c0cddbe7-6715-4c15-9097-5ba240e94a86)
 
 **III.  Implementation** 
 
@@ -78,21 +77,18 @@ STM32 microcontroller, including ADC reading, LCD display, smart algorithm for p
 
 **CubeMX** 
 
-![](Aspose.Words.a38cbf35-d0cb-4315-b13c-3e464c093027.004.jpeg)
+![Aspose Words a38cbf35-d0cb-4315-b13c-3e464c093027 004](https://github.com/ZehraMogulkoc/Energy-Saving-System/assets/87859856/f5c0748f-b3a7-4a7e-bc76-d8b8f433f67e)
 
 Leds:** PB13, PB14 and PB15 pins are set as GPIO Output pins for led connections.**  
-
-![](Aspose.Words.a38cbf35-d0cb-4315-b13c-3e464c093027.005.jpeg)
+![Aspose Words a38cbf35-d0cb-4315-b13c-3e464c093027 005](https://github.com/ZehraMogulkoc/Energy-Saving-System/assets/87859856/e12d1a24-ed35-4368-aba4-0af06cfd0117)
 
 UART: The UART baud rate is set to 9600 and the word length is set to 8 bits. PA9 and PA10 pins are cross connected to UART1 because of the asynchronous mode and PA1 and PA2 pins are cross-connected to UART2. UART1 is used for sensor data while UART2 is used for the Bluetooth module. 
+![Aspose Words a38cbf35-d0cb-4315-b13c-3e464c093027 006](https://github.com/ZehraMogulkoc/Energy-Saving-System/assets/87859856/5548e56f-cf90-41a2-86fa-209a56bd72a5)
 
-![](Aspose.Words.a38cbf35-d0cb-4315-b13c-3e464c093027.006.jpeg)ADC: All data from the sensors is gathered with the aid of ADC. We used pins PA0, PA1 and PA2 with ADC1. 
-
-![](Aspose.Words.a38cbf35-d0cb-4315-b13c-3e464c093027.007.jpeg)
+![Aspose Words a38cbf35-d0cb-4315-b13c-3e464c093027 007](https://github.com/ZehraMogulkoc/Energy-Saving-System/assets/87859856/1420c402-172a-42e1-a825-7719f06d252d)
 
 LCD Display: ADC is activated in NVIC settings in CubeMX. It has a printing value between 1-100. We monitor the sensor data via a 7-segment LCD display. 
-
-![](Aspose.Words.a38cbf35-d0cb-4315-b13c-3e464c093027.008.png)
+![Aspose Words a38cbf35-d0cb-4315-b13c-3e464c093027 008](https://github.com/ZehraMogulkoc/Energy-Saving-System/assets/87859856/0b365d37-3ff4-4884-9315-06a3aeafac46)
 
 **Keil MDK** 
 
@@ -117,18 +113,18 @@ After completing the configuration on CubeMX and writing the project function in
 One of the biggest problems that we had was sending the data correctly to the LCD display and we also were not able to send our temperature data to the virtual terminal via UART appropriately. We were able to solve the issue after switching to Proteus 8.11. Another issue we had was Bluetooth connection between mobile application and microcontroller. We needed to add serial ports separately. We managed to get the ADC values as an interrupt in Keil, but unfortunately, the callback function did not work in proteus. We changed versions for this, we used different methods, and we got help from TAs, but unfortunately, we could not solve this problem.
 
 6. **Project Screenshots** 
+![Aspose Words a38cbf35-d0cb-4315-b13c-3e464c093027 009](https://github.com/ZehraMogulkoc/Energy-Saving-System/assets/87859856/c0743687-8df5-4f4a-a1e2-6b13522de163)
 
-![](Aspose.Words.a38cbf35-d0cb-4315-b13c-3e464c093027.009.jpeg)
+![Aspose Words a38cbf35-d0cb-4315-b13c-3e464c093027 010](https://github.com/ZehraMogulkoc/Energy-Saving-System/assets/87859856/2cbd4b09-94fa-4d28-8fe1-5589c780ee63)
 
-![](Aspose.Words.a38cbf35-d0cb-4315-b13c-3e464c093027.010.jpeg)
 
 7. **Mobile Application Screenshot** 
+![Aspose Words a38cbf35-d0cb-4315-b13c-3e464c093027 011](https://github.com/ZehraMogulkoc/Energy-Saving-System/assets/87859856/35cf50ff-bf3b-4c0d-afa7-4e5e933345b9)
 
-![](Aspose.Words.a38cbf35-d0cb-4315-b13c-3e464c093027.011.jpeg)
 
 *The user will be able to connect to the system by pressing the active* 
+![Aspose Words a38cbf35-d0cb-4315-b13c-3e464c093027 012](https://github.com/ZehraMogulkoc/Energy-Saving-System/assets/87859856/cd1baf34-b79f-466d-8fea-79ae60a12568)
 
-![](Aspose.Words.a38cbf35-d0cb-4315-b13c-3e464c093027.012.jpeg)
 
 *After connecting to the system, the user can choose to turn on or turn off the* 
 
