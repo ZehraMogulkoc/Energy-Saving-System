@@ -2,30 +2,6 @@
 Embedded System Project
 ![](Aspose.Words.a38cbf35-d0cb-4315-b13c-3e464c093027.001.png)
 
-nd
-
-2022-2023 2 Semester, EE304, Embedded Systems Final Project **Instructor** 
-
-Abdulkadir KÖSE 
-
-**Subject** 
-
-Energy Consumption Detector
-
-**Submission Date** 
-
-23\.06.2023 
-
-**Submitted by** 
-
-Zehra Moğulkoç 110510223 
-
-Beyzanur Yüce 2011051071 
-
-Dilek Taylı 110510228 
-
-Group 16 
-
 1. **Objective**  
 
 The purpose of the Energy Consumption Detector is to prevent unnecessary waste and contribute to sustainability by keeping the amount of energy used at the optimum level in every environment where light and heat energy is used (home, workplace, institutions, etc.). Since it is thought that the system's self-management of energy may pose a danger, it is aimed to inform the user, offer suggestions, and make calculations about energy saving with a mobile application. In addition, when extraordinary values are reached in terms of heat and light, it is expected to detect an emergency and notify the user by giving a red alarm.   
@@ -37,7 +13,8 @@ The purpose of the Energy Consumption Detector is to prevent unnecessary waste a
 3) It makes some predictions on the energy consumption for different time intervals based on given data and makes suggestions accordingly.  
 3) With a Bluetooth module, the system is integrated with mobile applications. So, the users will be able to monitor/see the energy usage remotely. In the mobile application, additional features such as energy-saving tips can be added.  
 
-![](Aspose.Words.a38cbf35-d0cb-4315-b13c-3e464c093027.002.jpeg)
+![Aspose Words a38cbf35-d0cb-4315-b13c-3e464c093027 002](https://github.com/ZehraMogulkoc/Energy-Saving-System/assets/87859856/80b28cd0-0316-47d2-8f88-0a6d3794542e)
+](Aspose.Words.a38cbf35-d0cb-4315-b13c-3e464c093027.002.jpeg)
 
 ***Figure1: Design of the project*** 
 
